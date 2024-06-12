@@ -13,6 +13,8 @@
                 <TextBlock Text="Generar Informe" VerticalAlignment="Center"/>
             </StackPanel>
         </Button>
+        <Button x:Name="btnUnSoloAlumno" Content="De un solo Alumno" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Click="btnUnSoloAlumno_Click"/>
+        <Button x:Name="btnDeLaClase" Content="De toda la clase" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" Click="btnDeLaClase_Click"/>
 
     </Grid>
 </Window>

@@ -29,5 +29,15 @@ namespace ClassAssistReport
             frmGenerar informe= new frmGenerar();
             informe.Show();
         }
+
+        private void btnUnSoloAlumno_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDeLaClase_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
