@@ -22,7 +22,12 @@ namespace ClassAssistReport
         public Window1()
         {
             InitializeComponent();
-            reportViewer.Owner = this;
+        }
+
+        private void btnGenerarInforme_Click(object sender, RoutedEventArgs e)
+        {
+            frmGenerar informe= new frmGenerar();
+            informe.Show();
         }
     }
 }
