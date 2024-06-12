@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ClassAssistReport.DAO;
+using ClassAssistReport.DTO;
+using CrystalDecisions.CrystalReports.Engine;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +26,7 @@ namespace ClassAssistReport
         {
             InitializeComponent();
             ocultarBotones();
+            CargarAlumnos();
         }
 
         private void btnGenerarInforme_Click(object sender, RoutedEventArgs e)
@@ -32,7 +36,9 @@ namespace ClassAssistReport
 
         private void btnUnSoloAlumno_Click(object sender, RoutedEventArgs e)
         {
-
+            cmbNombres.Visibility = Visibility.Visible;
+            btnGenerarInfo.Visibility = Visibility.Visible;
+            btnDeLaClase.Visibility = Visibility.Collapsed;
         }
 
         private void btnDeLaClase_Click(object sender, RoutedEventArgs e)
@@ -52,6 +58,33 @@ namespace ClassAssistReport
         {
             btnDeLaClase.Visibility = Visibility.Collapsed;
             btnUnSoloAlumno.Visibility = Visibility.Collapsed;
+            cmbNombres.Visibility = Visibility.Collapsed;
+            btnGenerarInfo.Visibility = Visibility.Collapsed;
+        }
+
+        private void CargarAlumnos()
+        {
+            DAOAlumno daoAlumno = new DAOAlumno();
+            List<Alumno> alumnos = daoAlumno.ObtenerAlumnos();
+
+            cmbNombres.ItemsSource = alumnos;
+            cmbNombres.DisplayMemberPath = "Nombre";
+            cmbNombres.SelectedValuePath = "Nombre";
+        }
+
+        private void btnGenerarInfo_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbNombres.SelectedItem != null)
+            {
+                string nombreAlumno = cmbNombres.SelectedItem.ToString();
+                // Llama al formulario del informe y pasa el nombre del alumno como parámetro
+                frmGenerar2 informeForm = new frmGenerar2(nombreAlumno);
+                informeForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un nombre.");
+            }
         }
     }
 }

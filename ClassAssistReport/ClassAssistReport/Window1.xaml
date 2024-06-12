@@ -15,6 +15,8 @@
         </Button>
         <Button x:Name="btnUnSoloAlumno" Content="De un solo Alumno" HorizontalAlignment="Center" Margin="0,161,0,0" VerticalAlignment="Top" Click="btnUnSoloAlumno_Click"/>
         <Button x:Name="btnDeLaClase" Content="De toda la clase" HorizontalAlignment="Center" Margin="0,209,0,0" VerticalAlignment="Top" Click="btnDeLaClase_Click"/>
+        <ComboBox x:Name="cmbNombres" HorizontalAlignment="Left" Margin="121,215,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button x:Name="btnGenerarInfo" Content="Generar" HorizontalAlignment="Left" Margin="357,211,0,0" VerticalAlignment="Top" Click="btnGenerarInfo_Click"/>
 
     </Grid>
 </Window>

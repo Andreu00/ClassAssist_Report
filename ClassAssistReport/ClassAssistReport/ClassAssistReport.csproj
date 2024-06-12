@@ -155,6 +155,12 @@
     <Compile Include="frmGenerar.Designer.cs">
       <DependentUpon>frmGenerar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGenerar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerar2.Designer.cs">
+      <DependentUpon>frmGenerar2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerar.resx">
       <DependentUpon>frmGenerar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerar2.resx">
+      <DependentUpon>frmGenerar2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
