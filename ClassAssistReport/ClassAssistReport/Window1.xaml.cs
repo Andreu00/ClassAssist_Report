@@ -22,12 +22,12 @@ namespace ClassAssistReport
         public Window1()
         {
             InitializeComponent();
+            ocultarBotones();
         }
 
         private void btnGenerarInforme_Click(object sender, RoutedEventArgs e)
         {
-            frmGenerar informe= new frmGenerar();
-            informe.Show();
+            mostrarBotones();
         }
 
         private void btnUnSoloAlumno_Click(object sender, RoutedEventArgs e)
@@ -37,7 +37,21 @@ namespace ClassAssistReport
 
         private void btnDeLaClase_Click(object sender, RoutedEventArgs e)
         {
+            frmGenerar informe = new frmGenerar();
+            informe.Show();
+        }
 
+        private void mostrarBotones()
+        {
+            btnGenerarInforme.Visibility = Visibility.Collapsed;
+            btnDeLaClase.Visibility = Visibility.Visible;
+            btnUnSoloAlumno.Visibility = Visibility.Visible;
+        }
+
+        private void ocultarBotones()
+        {
+            btnDeLaClase.Visibility = Visibility.Collapsed;
+            btnUnSoloAlumno.Visibility = Visibility.Collapsed;
         }
     }
 }

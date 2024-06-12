@@ -140,13 +140,15 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DAO\conexion.cs" />
-    <Compile Include="frmBoton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmBoton.Designer.cs">
-      <DependentUpon>frmBoton.cs</DependentUpon>
-    </Compile>
+    <Compile Include="DAO\DAOAlumno.cs" />
+    <Compile Include="DTO\Alumno.cs" />
     <Compile Include="frmGenerar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,8 +178,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBoton.resx">
-      <DependentUpon>frmBoton.cs</DependentUpon>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerar.resx">
       <DependentUpon>frmGenerar.cs</DependentUpon>
