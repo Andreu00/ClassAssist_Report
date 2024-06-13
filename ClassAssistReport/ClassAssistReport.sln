@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassAssistReport", "ClassAssistReport\ClassAssistReport.csproj", "{DD6BB22A-375E-4F85-9623-C433BC03D436}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ClassAssist_Report_Installer", "ClassAssist_Report_Installer\ClassAssist_Report_Installer.vdproj", "{BB43885F-E3A4-4D07-90F9-1021C7244C8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,8 @@ Global
 		{DD6BB22A-375E-4F85-9623-C433BC03D436}.Debug|x86.Build.0 = Debug|x86
 		{DD6BB22A-375E-4F85-9623-C433BC03D436}.Release|x86.ActiveCfg = Release|x86
 		{DD6BB22A-375E-4F85-9623-C433BC03D436}.Release|x86.Build.0 = Release|x86
+		{BB43885F-E3A4-4D07-90F9-1021C7244C8C}.Debug|x86.ActiveCfg = Debug
+		{BB43885F-E3A4-4D07-90F9-1021C7244C8C}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
