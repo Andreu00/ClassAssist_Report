@@ -77,7 +77,6 @@ namespace ClassAssistReport
             if (cmbNombres.SelectedItem != null)
             {
                 string nombreAlumno = cmbNombres.SelectedItem.ToString();
-                // Llama al formulario del informe y pasa el nombre del alumno como parámetro
                 frmGenerar2 informeForm = new frmGenerar2(nombreAlumno);
                 informeForm.Show();
             }
